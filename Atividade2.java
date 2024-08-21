@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Atividade2 {
     public static void main(String[] args) {
-        System.out.println("====ALUNOS:Bruno Custodio de Castro, Marlon Silva, Victor Fernandes Ferreira");
+        System.out.println("=====Alunos:Bruno Custodio de Castro, Marlon Silva, Victor Fernandes=====");
         Scanner scan = new Scanner(System.in);
 
         int[] idade = new int[10];
@@ -29,13 +29,14 @@ public class Atividade2 {
             altura[i] = scan.nextFloat();
         }
 
-        System.out.println("\nDados inseridos:");
-        for (int i = 0; i < 10; i++) {
-            System.out.println("Pessoa " + (i + 1) + ": Nome: " + nome[i] + ", Idade: " + idade[i] + ", Altura: " + altura[i]);
-        }
+        System.out.println("\nInformações específicas:");
+        System.out.println("Nome da pessoa na posição 3: " + nome[2]); // posição 3 (índice 2)
+        System.out.println("Idade da pessoa na posição 6: " + idade[5]); // posição 6 (índice 5)
+        System.out.println("Altura da pessoa na posição 10: " + altura[9]); // posição 10 (índice 9)
 
         scan.close();
     }
 }
+
 
 
